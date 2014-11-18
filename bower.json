@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "angular-material": "~0.5.1",
-    "ionic": "driftyco/ionic-bower#master"
+    "ionic": "driftyco/ionic-bower#master",
+    "material-design-icons": "~1.0.1"
   }
 }
