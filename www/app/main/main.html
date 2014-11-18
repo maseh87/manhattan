@@ -1,14 +1,21 @@
-<!-- <div layout="vertical" layout-fill>
+<div layout="horizontal">
+  <md-sidenav class="md-sidenav-left md-whiteframe-z2" component-id="left" is-locked-open="$media('md')">
+    <md-content class="md-padding">
+      <md-list>
+        <md-item>
+          <md-item-content ui-sref="app.main.profile" ui-sref-active="active" ink-ripple>
+            <div class="md-tile-content">
+              <h3>Profile</h3>
+            </div>
+          </md-item-content>
+        </md-item>
+      </md-list>
+    </md-content>
+  </md-sidenav>
 
-  <section layout="horizontal" flex>
 
-    <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$media('md')">
-      <md-content class="md-padding">
+  <div class="right-view">
+    <ion-nav-view name="right-view"></ion-nav-view>
+  </div>
 
-      </md-content>
-
-    </md-sidenav>
-
-  </section>
-
-</div> -->
+</div>

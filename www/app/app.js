@@ -6,7 +6,8 @@
 angular.module('starter', [
   'ionic',
   'app.main',
-  'ui.router'
+  'ui.router',
+  'ngMaterial'
 ])
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
@@ -15,7 +16,7 @@ angular.module('starter', [
       template: '<ion-nav-view></ion-nav-view>',
       abstract: true
     });
-  $urlRouterProvider.otherwise('/main');
+  $urlRouterProvider.otherwise('/main/profile');
 })
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
