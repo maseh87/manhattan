@@ -40,19 +40,24 @@
 
         <section layout="horizontal" flex>
 
-        <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$media('md')">
-          <md-content class="md-padding">
-            <ion-list>
-            </ion-list>
-          </md-content>
+          <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$media('md')">
+            <md-content class="md-padding">
+              <md-list>
+                <md-item ui-sref="app.main.profile">
+                  <md-item-content>
+                    Profile
+                  </md-item-content>
+                </md-item>
+              </md-list>
+            </md-content>
 
-        </md-sidenav>
+          </md-sidenav>
 
         </section>
 
+        <!-- ui-view -->
+        <ion-nav-view></ion-nav-view>
       </div>
-      <!-- ui-view -->
-      <ion-nav-view></ion-nav-view>
     </ion-pane>
   </body>
 </html>
