@@ -2,6 +2,16 @@
   "name": "HelloIonic",
   "private": "true",
   "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.0.0-beta.13"
+    "ionic": "driftyco/ionic-bower#master"
+  },
+  "resolutions": {
+    "angular-animate": "~1.3.2",
+    "angular-sanitize": "~1.3.2",
+    "angular": "1.3.2",
+    "ionic": "master"
+  },
+  "dependencies": {
+    "angular-material": "~0.5.1",
+    "ionic": "driftyco/ionic-bower#master"
   }
 }
