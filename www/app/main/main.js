@@ -1,5 +1,6 @@
 angular.module('app.main', [
-  'app.main.profile'
+  'app.main.profile',
+  'app.main.drinks'
 ])
 
 .config(function($stateProvider) {
@@ -14,5 +15,5 @@ angular.module('app.main', [
 .controller('MainController', function($scope, $mdSidenav) {
   $scope.toggleLeft = function() {
     $mdSidenav('left').toggle();
-  }
+  };
 });
