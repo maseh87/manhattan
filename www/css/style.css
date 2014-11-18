@@ -4,6 +4,20 @@
 .primary {
   background-color: #00bcd4 !important;
 }
+md-sidenav {
+  width: 200px;
+}
+.padding-card {
+  padding: 0px;
+}
 .active {
-  background-color: #1de9b6;
+  background-color: #e0e0e0;
+}
+md-content.md-padding {
+  padding-top: 64px;
+}
+md-card {
+  width: 60%;
+  min-height: 500px;
+  margin-top: 64px;
 }
