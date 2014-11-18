@@ -1,7 +1,8 @@
 angular.module('app.main', [
   'app.main.profile',
   'app.main.drinks',
-  'app.main.settings'
+  'app.main.settings',
+  'app.main.orders'
 ])
 
 .config(function($stateProvider) {
