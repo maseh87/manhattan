@@ -9,13 +9,15 @@ angular.module('starter', [
   'ui.router',
   'ngMaterial'
 ])
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
   $stateProvider
     .state('app', {
       url: '/',
       template: '<ion-nav-view></ion-nav-view>',
       abstract: true
     });
+
+    $ionicConfigProvider.views.transition('android').maxCache(0);
   $urlRouterProvider.otherwise('/main/profile');
 })
 .run(function($ionicPlatform) {

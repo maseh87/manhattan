@@ -13,19 +13,30 @@ angular.module('app.main.orders', [])
     });
 })
 .controller('OrdersController', function($scope) {
-  var item = {
-    face: '/img/list/60.jpeg',
-    what: 'Brunch this weekend?',
-    who: 'Min Li Chan',
-    notes: "I'll be in your neighborhood doing errands."
+  $scope.data = {
+    "orders": [
+      {
+        "code": "A1S2D3",
+        "user": {
+          "name": "Harvy Sheen",
+          "img": ""
+        },
+        "drinks": [
+          {"name": "white russian", "price": "13"}
+        ],
+        "total": "13"
+      },
+      {
+        "code": "F4G5H6",
+        "user": {
+          "name": "Lex Steele",
+          "img": ""
+        },
+        "drinks": [
+          {"name": "red bull vodka", "price": "8"},
+          {"name": "coke and rum", "price": "7"}
+        ],
+        "total": "15"
+    }]
   };
-  $scope.todos = [];
-  for (var i = 0; i < 3; i++) {
-    $scope.todos.push({
-      face: '/img/list/60.jpeg',
-      what: "Brunch this weekend?",
-      who: "Min Li Chan",
-      notes: "I'll be in your neighborhood doing errands."
-    });
-  }
 });
