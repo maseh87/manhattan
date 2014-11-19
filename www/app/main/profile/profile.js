@@ -20,7 +20,7 @@ angular.module('app.main.profile', [])
     notes: "I'll be in your neighborhood doing errands."
   };
   $scope.todos = [];
-  for (var i = 0; i < 15; i++) {
+  for (var i = 0; i < 4; i++) {
     $scope.todos.push({
       face: '/img/list/60.jpeg',
       what: "Brunch this weekend?",

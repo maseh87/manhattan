@@ -1,6 +1,11 @@
 <ion-view title="Orders">
-  <!-- <ion-nav-bar class="primary" padding="true"></ion-nav-bar> -->
   <ion-content>
-    <md-card>Orders</md-card>
+    <div class="order-grid" layout="row">
+      <div class="order" ng-repeat="order in todos">
+        <md-icon icon='lib/material-design-icons/navigation/svg/production/ic_more_vert_48px.svg'></md-icon>
+        <div class="pic md-toolbar-tools md-toolbar-tools-bottom">
+        </div>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
