@@ -1,0 +1,42 @@
+<div layout="horizontal">
+  <md-sidenav class="md-sidenav-left" component-id="left" is-locked-open="$media('md')">
+    <md-content class="md-padding">
+      <md-list>
+        <md-item>
+          <md-item-content ui-sref="app.main.orders" ui-sref-active="active" ink-ripple>
+            <div class="md-tile-content">
+              <h2>Orders</h2>
+            </div>
+          </md-item-content>
+        </md-item>
+        <md-item>
+          <md-item-content ui-sref="app.main.drinks" ui-sref-active="active" ink-ripple>
+            <div class="md-tile-content">
+              <h2>Drinks</h2>
+            </div>
+          </md-item-content>
+        </md-item>
+        <md-item>
+          <md-item-content ui-sref="app.main.profile" ui-sref-active="active" ink-ripple>
+            <div class="md-tile-content" >
+              <h2>Profile</h2>
+            </div>
+          </md-item-content>
+        </md-item>
+        <md-item>
+          <md-item-content ui-sref="app.main.settings" ui-sref-active="active" ink-ripple>
+            <div class="md-tile-content">
+              <h2>Settings</h2>
+            </div>
+          </md-item-content>
+        </md-item>
+      </md-list>
+    </md-content>
+  </md-sidenav>
+
+
+  <div class="right-view">
+    <ion-nav-view name="right-view"></ion-nav-view>
+  </div>
+
+</div>
