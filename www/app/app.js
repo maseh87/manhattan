@@ -6,16 +6,34 @@
 angular.module('starter', [
   'ionic',
   'app.main',
-  // 'app.login',
+  'app.login',
   'ui.router',
   'ngMaterial',
   'auth0',
   'angular-storage',
   'angular-jwt',
-  // 'app.auth'
+  'app.auth'
 ])
 
-.run(function($ionicPlatform) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider, authProvider) {
+  $stateProvider
+    .state('app', {
+      url: '/',
+      template: '<ion-nav-view></ion-nav-view>',
+      abstract: true
+    });
+
+  authProvider.init({
+    domain: 'sipdrink.auth0.com',
+    clientID: 'mYLZ1owVTysjstR9o6PvdHT7Kqvj5Qa9',
+    loginState: 'app.login'
+  });
+
+  $ionicConfigProvider.views.transition('android').maxCache(0);
+  $urlRouterProvider.otherwise('/main/orders');
+})
+.run(function($ionicPlatform, auth) {
+  auth.hookEvents();
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -23,8 +41,6 @@ angular.module('starter', [
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
     }
     if(window.StatusBar) {
-      // Set the statusbar to use the default style, tweak this to
-      // remove the status bar on iOS or change it to use white instead of dark colors.
       StatusBar.styleDefault();
     }
   });

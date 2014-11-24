@@ -1,0 +1,18 @@
+<ion-view title="Orders">
+  <ion-content>
+    <div class="order-grid" layout="row">
+      <div class="order" ng-repeat="order in data.orders" ink-ripple>
+        <div style="height: 100%; width: 100%">
+          <div class="pic"></div>
+          <div class="order-header" layout>
+            <h1 class="name" flex>{{ order.user.name }}</h1>
+            <h1 class="total">{{ order.drinks.length }}</h1>
+          </div>
+          <div class="order-footer" layout="row" layout-align="end">
+            <h1>${{ order.total }}</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
