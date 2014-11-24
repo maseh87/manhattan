@@ -32,8 +32,20 @@ angular.module('starter', [
   $ionicConfigProvider.views.transition('android').maxCache(0);
   $urlRouterProvider.otherwise('/main/orders');
 })
-.run(function($ionicPlatform, auth) {
+.run(function($ionicPlatform, auth, store, $state, jwtHelper) {
   auth.hookEvents();
+  if (!auth.isAuthenticated) {
+   var token = store.get('token');
+   if (token) {
+     if (!jwtHelper.isTokenExpired(token)) {
+       auth.authenticate(store.get('profile'), token);
+     } else {
+       // Either show Login page or use the refresh token to get a new idToken
+
+       $state.go('app.login');
+     }
+   }
+ }
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)

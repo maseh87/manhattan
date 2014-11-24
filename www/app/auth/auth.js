@@ -12,6 +12,10 @@ angular.module('app.auth', [])
         // device: 'Mobile device'
       }
     }, function(profile, token, accessToken, state, refreshToken) {
+      console.log(profile, 'profile')
+      console.log(token, 'token')
+      console.log(refreshToken, 'refreshToken')
+
       // Success callback
       store.set('profile', profile);
       store.set('token', token);

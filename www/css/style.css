@@ -1,0 +1,23 @@
+.accent {
+  background-color: #1de9b6 !important;
+}
+.primary {
+  background-color: #00bcd4 !important;
+}
+md-sidenav {
+  width: 200px;
+  background-color: #2a373e;
+}
+md-sidenav h2 {
+  color: #fff;
+  font-size: 25px;
+}
+ion-view.pane {
+  background-color: #1c262b;
+}
+.active h2 {
+  color: #ef6c00;
+}
+md-content.md-padding {
+  background-color: #2a373e;
+}
