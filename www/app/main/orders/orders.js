@@ -1,4 +1,6 @@
-angular.module('app.main.orders', [])
+angular.module('app.main.orders', [
+  'app.main.orders.details'
+])
 
 .config(function($stateProvider) {
   $stateProvider
@@ -12,6 +14,14 @@ angular.module('app.main.orders', [])
       },
       data: {
         requiresLogin: true
+      }
+    })
+    .state('app.main.orderDetail', {
+      url: '/orders/:id',
+      views: {
+        'right-view': {
+          templateUrl: 'app/main/orders/details/details.html'
+        }
       }
     });
 })
