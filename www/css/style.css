@@ -4,13 +4,8 @@
 .primary {
   background-color: #00bcd4 !important;
 }
-md-sidenav {
-  width: 200px;
-  background-color: #2a373e;
-}
-md-sidenav h2 {
-  color: #fff;
-  font-size: 25px;
+.right-view {
+  position: relative;
 }
 ion-view.pane {
   background-color: #1c262b;

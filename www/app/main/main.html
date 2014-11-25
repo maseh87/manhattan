@@ -1,5 +1,5 @@
 <div layout="horizontal">
-  <md-sidenav class="md-sidenav-left  md-whiteframe-z2" component-id="left" is-locked-open="$media('md')">
+  <div class="md-whiteframe-z2" flex="20">
     <md-toolbar md-theme="orange"></md-toolbar>
     <md-content class="md-padding">
       <md-list>
@@ -33,10 +33,10 @@
         </md-item>
       </md-list>
     </md-content>
-  </md-sidenav>
+  </div>
 
 
-  <div class="right-view">
+  <div class="right-view" flex="80">
     <ion-nav-view name="right-view"></ion-nav-view>
   </div>
 
