@@ -13,6 +13,9 @@ ion-view.pane {
 .active h2 {
   color: #ef6c00;
 }
+.order {
+  margin: 2px !important;
+}
 md-content.md-padding {
   background-color: #2a373e;
 }
