@@ -53,6 +53,40 @@ angular.module('app.main.orders', [])
         ],
         "total": "15"
       },
+      {
+        "code": "F4G5H6",
+        "user": {
+          "name": "Mr. NeckBeard",
+          "img": ""
+        },
+        "drinks": [
+          {"name": "red bull vodka", "price": "8"},
+          {"name": "coke and rum", "price": "7"}
+        ],
+        "total": "15"
+      },{
+        "code": "F4G5H6",
+        "user": {
+          "name": "Mr. NeckBeard",
+          "img": ""
+        },
+        "drinks": [
+          {"name": "red bull vodka", "price": "8"},
+          {"name": "coke and rum", "price": "7"}
+        ],
+        "total": "15"
+      },{
+        "code": "F4G5H6",
+        "user": {
+          "name": "Mr. NeckBeard",
+          "img": ""
+        },
+        "drinks": [
+          {"name": "red bull vodka", "price": "8"},
+          {"name": "coke and rum", "price": "7"}
+        ],
+        "total": "15"
+      },
       ]
   };
 });

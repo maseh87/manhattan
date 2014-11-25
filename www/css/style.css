@@ -13,8 +13,18 @@ ion-view.pane {
 .active h2 {
   color: #ef6c00;
 }
+.sideNavContent {
+  background-color: #2a373e;
+}
 .order {
   margin: 2px !important;
+}
+h2 {
+  color: #fff;
+}
+.order-grid {
+  flex-wrap: wrap;
+  padding-left: 20px;
 }
 md-content.md-padding {
   background-color: #2a373e;
