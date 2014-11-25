@@ -1,7 +1,7 @@
 angular.module('app.main', [
-  // 'app.main.profile',
-  // 'app.main.drinks',
-  // 'app.main.settings',
+  'app.main.profile',
+  'app.main.drinks',
+  'app.main.settings',
   'app.main.orders'
 ])
 
