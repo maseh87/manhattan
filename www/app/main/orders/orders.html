@@ -5,9 +5,11 @@
         <div class="pic"></div>
         <div class="order-header">
           <h1 class="name">{{ ::order.user.name }}</h1>
-          <!-- <h1 class="total">{{ order.drinks.length }}</h1> -->
         </div>
-        <div class="order-footer" layout="row" layout-align="end end">
+        <div class="order-footer" layout="row" layout-align="space-between end">
+          <div>
+            <h2 class="total">{{ order.drinks.length }}</h2>
+          </div>
           <div class="price">
             <h2>${{ order.total }}</h2>
           </div>
