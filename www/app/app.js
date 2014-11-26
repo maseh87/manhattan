@@ -6,6 +6,7 @@
 angular.module('starter', [
   'ionic',
   'app.main',
+  'app.services',
   'app.login',
   'ui.router',
   'ngMaterial',
