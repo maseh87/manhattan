@@ -52,3 +52,6 @@ h2 {
 md-content.md-padding {
   background-color: #2a373e;
 }
+md-content.md-default-theme {
+  background-color: inherit;
+}

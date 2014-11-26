@@ -1,10 +1,12 @@
 <ion-view title="Orders">
   <ion-content overflow-scroll="true">
     <div class="order-grid" layout="row">
-      <md-card class="order" ng-repeat="order in data.orders" flex="30" ui-sref="app.main.orderDetail({id: '_id'})">
-        <div class="pic"></div>
-        <div class="order-header">
-          <h1 class="name">{{ ::order.user.name }}</h1>
+      <md-card class="order" ng-repeat="order in data.orders" flex="30">
+        <div class="order-header" layout="row" layout-align="space-between">
+          <div>
+            <h2 class="name" ui-sref="app.main.orderDetail({id: '_id'})">{{ ::order.user.name }}</h2>
+          </div>
+          <md-content class="assign" ng-click="assignTo($event)" ink-ripple><img src='lib/material-design-icons/navigation/svg/design/ic_more_vert_24px.svg'></md-content>
         </div>
         <div class="order-footer" layout="row" layout-align="space-between end">
           <div>

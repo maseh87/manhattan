@@ -25,6 +25,23 @@ angular.module('app.main.orders', [
       }
     });
 })
-.controller('OrdersController', function($scope, OrderFactory) {
+.controller('OrdersController', function($scope, $mdDialog, OrderFactory) {
   $scope.data = OrderFactory.orders;
+
+  $scope.assignTo = function(event) {
+    console.log($mdDialog);
+    $mdDialog.show({
+      templateUrl: 'app/main/orders/dialog.tpl.html',
+      targetEvent: event,
+      controller: function($scope, OrderFactory) {
+        $scope.bartenders = OrderFactory.bartenders;
+      }
+    });
+  };
+
 });
+
+
+
+
+

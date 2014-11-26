@@ -298,7 +298,18 @@ angular.module('app.services', [])
       },
       ]
   };
+
+  var bars = {
+    bartenders: [
+      "Juicy J",
+      "Donna Goodeau",
+      "Qua\'vey",
+      "Shantarius",
+      "Pootie"
+    ]
+  };
   return {
-    orders: orders
+    orders: orders,
+    bartenders: bars.bartenders
   };
 });
