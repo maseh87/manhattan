@@ -4,6 +4,9 @@
 .primary {
   background-color: #00bcd4 !important;
 }
+md-toolbar {
+  z-index: 1000;
+}
 .right-view {
   position: relative;
 }
@@ -17,14 +20,34 @@ ion-view.pane {
   background-color: #2a373e;
 }
 .order {
+  height: 250px;
   margin: 2px !important;
+  background-color: #f44336;
+  box-shadow: none;
+  position: relative;
 }
 h2 {
   color: #fff;
 }
 .order-grid {
-  flex-wrap: wrap;
-  padding-left: 20px;
+  -webkit-flex-wrap: wrap;
+  padding-top: 1%;
+  padding-left: 10%;
+}
+.name {
+  color: #fff;
+}
+.order-header {
+  position: relative;
+}
+.order-footer {
+  position: absolute;
+  background-color: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 25%;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
 }
 md-content.md-padding {
   background-color: #2a373e;

@@ -13,7 +13,7 @@ angular.module('app.main.orders', [
         }
       },
       data: {
-        requiresLogin: true
+        // requiresLogin: true
       }
     })
     .state('app.main.orderDetail', {
@@ -37,9 +37,22 @@ angular.module('app.main.orders', [
         "drinks": [
           {"name": "white russian", "price": "13"}
         ],
-        "total": "13"
+        "total": "13",
+        "assignedTo": ""
       },
       {
+        "code": "F4G5H6",
+        "user": {
+          "name": "Lex Steele",
+          "img": ""
+        },
+        "drinks": [
+          {"name": "red bull vodka", "price": "8"},
+          {"name": "coke and rum", "price": "7"}
+        ],
+        "total": "15"
+      },
+       {
         "code": "F4G5H6",
         "user": {
           "name": "Lex Steele",
@@ -54,7 +67,62 @@ angular.module('app.main.orders', [
       {
         "code": "F4G5H6",
         "user": {
-          "name": "Mr. NeckBeard",
+          "name": "Lex Steele",
+          "img": ""
+        },
+        "drinks": [
+          {"name": "red bull vodka", "price": "8"},
+          {"name": "coke and rum", "price": "7"}
+        ],
+        "total": "15"
+      }, {
+        "code": "F4G5H6",
+        "user": {
+          "name": "Lex Steele",
+          "img": ""
+        },
+        "drinks": [
+          {"name": "red bull vodka", "price": "8"},
+          {"name": "coke and rum", "price": "7"}
+        ],
+        "total": "15"
+      }, {
+        "code": "F4G5H6",
+        "user": {
+          "name": "Lex Steele",
+          "img": ""
+        },
+        "drinks": [
+          {"name": "red bull vodka", "price": "8"},
+          {"name": "coke and rum", "price": "7"}
+        ],
+        "total": "15"
+      }, {
+        "code": "F4G5H6",
+        "user": {
+          "name": "Lex Steele",
+          "img": ""
+        },
+        "drinks": [
+          {"name": "red bull vodka", "price": "8"},
+          {"name": "coke and rum", "price": "7"}
+        ],
+        "total": "15"
+      }, {
+        "code": "F4G5H6",
+        "user": {
+          "name": "Lex Steele",
+          "img": ""
+        },
+        "drinks": [
+          {"name": "red bull vodka", "price": "8"},
+          {"name": "coke and rum", "price": "7"}
+        ],
+        "total": "15"
+      }, {
+        "code": "F4G5H6",
+        "user": {
+          "name": "Lex Steele",
           "img": ""
         },
         "drinks": [
@@ -63,40 +131,196 @@ angular.module('app.main.orders', [
         ],
         "total": "15"
       },
-      {
-        "code": "F4G5H6",
-        "user": {
-          "name": "Mr. NeckBeard",
-          "img": ""
-        },
-        "drinks": [
-          {"name": "red bull vodka", "price": "8"},
-          {"name": "coke and rum", "price": "7"}
-        ],
-        "total": "15"
-      },{
-        "code": "F4G5H6",
-        "user": {
-          "name": "Mr. NeckBeard",
-          "img": ""
-        },
-        "drinks": [
-          {"name": "red bull vodka", "price": "8"},
-          {"name": "coke and rum", "price": "7"}
-        ],
-        "total": "15"
-      },{
-        "code": "F4G5H6",
-        "user": {
-          "name": "Mr. NeckBeard",
-          "img": ""
-        },
-        "drinks": [
-          {"name": "red bull vodka", "price": "8"},
-          {"name": "coke and rum", "price": "7"}
-        ],
-        "total": "15"
-      },
+      //{
+      //   "code": "F4G5H6",
+      //   "user": {
+      //     "name": "Lex Steele",
+      //     "img": ""
+      //   },
+      //   "drinks": [
+      //     {"name": "red bull vodka", "price": "8"},
+      //     {"name": "coke and rum", "price": "7"}
+      //   ],
+      //   "total": "15"
+      // }, {
+      //   "code": "F4G5H6",
+      //   "user": {
+      //     "name": "Lex Steele",
+      //     "img": ""
+      //   },
+      //   "drinks": [
+      //     {"name": "red bull vodka", "price": "8"},
+      //     {"name": "coke and rum", "price": "7"}
+      //   ],
+      //   "total": "15"
+      // }, {
+      //   "code": "F4G5H6",
+      //   "user": {
+      //     "name": "Lex Steele",
+      //     "img": ""
+      //   },
+      //   "drinks": [
+      //     {"name": "red bull vodka", "price": "8"},
+      //     {"name": "coke and rum", "price": "7"}
+      //   ],
+      //   "total": "15"
+      // }, {
+      //   "code": "F4G5H6",
+      //   "user": {
+      //     "name": "Lex Steele",
+      //     "img": ""
+      //   },
+      //   "drinks": [
+      //     {"name": "red bull vodka", "price": "8"},
+      //     {"name": "coke and rum", "price": "7"}
+      //   ],
+      //   "total": "15"
+      // }, {
+      //   "code": "F4G5H6",
+      //   "user": {
+      //     "name": "Lex Steele",
+      //     "img": ""
+      //   },
+      //   "drinks": [
+      //     {"name": "red bull vodka", "price": "8"},
+      //     {"name": "coke and rum", "price": "7"}
+      //   ],
+      //   "total": "15"
+      // }, {
+      //   "code": "F4G5H6",
+      //   "user": {
+      //     "name": "Lex Steele",
+      //     "img": ""
+      //   },
+      //   "drinks": [
+      //     {"name": "red bull vodka", "price": "8"},
+      //     {"name": "coke and rum", "price": "7"}
+      //   ],
+      //   "total": "15"
+      // }, {
+      //   "code": "F4G5H6",
+      //   "user": {
+      //     "name": "Lex Steele",
+      //     "img": ""
+      //   },
+      //   "drinks": [
+      //     {"name": "red bull vodka", "price": "8"},
+      //     {"name": "coke and rum", "price": "7"}
+      //   ],
+      //   "total": "15"
+      // }, {
+      //   "code": "F4G5H6",
+      //   "user": {
+      //     "name": "Lex Steele",
+      //     "img": ""
+      //   },
+      //   "drinks": [
+      //     {"name": "red bull vodka", "price": "8"},
+      //     {"name": "coke and rum", "price": "7"}
+      //   ],
+      //   "total": "15"
+      // }, {
+      //   "code": "F4G5H6",
+      //   "user": {
+      //     "name": "Lex Steele",
+      //     "img": ""
+      //   },
+      //   "drinks": [
+      //     {"name": "red bull vodka", "price": "8"},
+      //     {"name": "coke and rum", "price": "7"}
+      //   ],
+      //   "total": "15"
+      // }, {
+      //   "code": "F4G5H6",
+      //   "user": {
+      //     "name": "Lex Steele",
+      //     "img": ""
+      //   },
+      //   "drinks": [
+      //     {"name": "red bull vodka", "price": "8"},
+      //     {"name": "coke and rum", "price": "7"}
+      //   ],
+      //   "total": "15"
+      // }, {
+      //   "code": "F4G5H6",
+      //   "user": {
+      //     "name": "Lex Steele",
+      //     "img": ""
+      //   },
+      //   "drinks": [
+      //     {"name": "red bull vodka", "price": "8"},
+      //     {"name": "coke and rum", "price": "7"}
+      //   ],
+      //   "total": "15"
+      // }, {
+      //   "code": "F4G5H6",
+      //   "user": {
+      //     "name": "Lex Steele",
+      //     "img": ""
+      //   },
+      //   "drinks": [
+      //     {"name": "red bull vodka", "price": "8"},
+      //     {"name": "coke and rum", "price": "7"}
+      //   ],
+      //   "total": "15"
+      // }, {
+      //   "code": "F4G5H6",
+      //   "user": {
+      //     "name": "Lex Steele",
+      //     "img": ""
+      //   },
+      //   "drinks": [
+      //     {"name": "red bull vodka", "price": "8"},
+      //     {"name": "coke and rum", "price": "7"}
+      //   ],
+      //   "total": "15"
+      // },
+      // {
+      //   "code": "F4G5H6",
+      //   "user": {
+      //     "name": "Mr. NeckBeard",
+      //     "img": ""
+      //   },
+      //   "drinks": [
+      //     {"name": "red bull vodka", "price": "8"},
+      //     {"name": "coke and rum", "price": "7"}
+      //   ],
+      //   "total": "15"
+      // },
+      // {
+      //   "code": "F4G5H6",
+      //   "user": {
+      //     "name": "Mr. NeckBeard",
+      //     "img": ""
+      //   },
+      //   "drinks": [
+      //     {"name": "red bull vodka", "price": "8"},
+      //     {"name": "coke and rum", "price": "7"}
+      //   ],
+      //   "total": "15"
+      // },{
+      //   "code": "F4G5H6",
+      //   "user": {
+      //     "name": "Mr. NeckBeard",
+      //     "img": ""
+      //   },
+      //   "drinks": [
+      //     {"name": "red bull vodka", "price": "8"},
+      //     {"name": "coke and rum", "price": "7"}
+      //   ],
+      //   "total": "15"
+      // },{
+      //   "code": "F4G5H6",
+      //   "user": {
+      //     "name": "Mr. NeckBeard",
+      //     "img": ""
+      //   },
+      //   "drinks": [
+      //     {"name": "red bull vodka", "price": "8"},
+      //     {"name": "coke and rum", "price": "7"}
+      //   ],
+      //   "total": "15"
+      // },
       ]
   };
 });

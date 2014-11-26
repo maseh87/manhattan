@@ -1,15 +1,15 @@
 <ion-view title="Orders">
-  <ion-content>
+  <ion-content overflow-scroll="true">
     <div class="order-grid" layout="row">
       <md-card class="order" ng-repeat="order in data.orders" flex="30" ui-sref="app.main.orderDetail({id: '_id'})">
-        <div>
-          <div class="pic"></div>
-          <div class="order-header" layout>
-            <h1 class="name" flex>{{ order.user.name }}</h1>
-            <h1 class="total">{{ order.drinks.length }}</h1>
-          </div>
-          <div class="order-footer" layout="row" layout-align="end">
-            <h1>${{ order.total }}</h1>
+        <div class="pic"></div>
+        <div class="order-header">
+          <h1 class="name">{{ ::order.user.name }}</h1>
+          <!-- <h1 class="total">{{ order.drinks.length }}</h1> -->
+        </div>
+        <div class="order-footer" layout="row" layout-align="end end">
+          <div class="price">
+            <h2>${{ order.total }}</h2>
           </div>
         </div>
       </md-card>
